@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="version">Version 1.0</string>
+    <string name="app_type">Pro</string>
+    <string name="app_name">Message Me</string>
+    <string name="home">Home</string>
+    <string name="new_message">New Message</string>
+    <string name="all_contacts">Contacts</string>
+    <string name="folders">Messages</string>
+    <string name="keywords">Keywords</string>
+    <string name="new_keyword">New Keyword</string>
+    <string name="help">Help</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginTop="3dp"
+    android:padding="6dip" >
+
+    <CheckBox
+        android:id="@+id/cBoxKeywords"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/titleOfKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/cBoxKeywords"
+        android:text="Title: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textOfKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/cBoxKeywords"
+        android:singleLine="true"
+        android:text="Text: "
+        android:textStyle="italic" />
+
+</RelativeLayout>

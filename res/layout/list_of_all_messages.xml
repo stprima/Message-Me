@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginTop="3dp"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+id/iconOfMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/sent_icon"
+        android:background="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cBoxAllMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/cBoxAllMessages"
+        android:layout_toRightOf="@id/iconOfMessage1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dayAndTimeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/receiversMessage"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/iconOfMessage1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Day And Time"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/receiversMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/cBoxAllMessages"
+        android:layout_toRightOf="@id/iconOfMessage1"
+        android:text="Receivers"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

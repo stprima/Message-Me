@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <EditText
+        android:id="@+id/editTitleKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Add Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.9"
+        android:gravity="top"
+        android:hint="Add Text (Tip: You can use another keywords here by typing #Keyword)"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tviewkeyword"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:enabled="false" >
+        </TextView>
+
+        <Button
+            android:id="@+id/saveKeyword"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/tviewkeyword"
+            android:text="Save" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancelSavingKeyword"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/tviewkeyword"
+            android:text="Cancel" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

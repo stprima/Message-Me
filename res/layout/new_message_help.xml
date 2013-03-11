@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/nMessageHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is intended for how to write messages properly\n\nIn the contacts box at the top of the screen You can manually add any phone numbers or import them from phone contacts
+You can also change or add First Name for any phone number. For example, if You send message to +1 111 11-11 You can add &quot;Name Surname&quot; or &quot;Name&quot; before it, so it will be &quot;Name&quot; +1 111 11-11. Also do not forget to separate phone numbers by comma\n\nIn the message box You can add Keywords which are taken from Keywords folder. You can add, delete or modify keywords. In order to use them in your message You need just type # before Keywords title, so it will be #keyword_title. Remember that #First_Name is indicating First Name which is written in contacts box.\n\nThe special feature of this app is that you can add additional text for some receivers and others will not get it.\n\nFor Example : You want to send &quot;See You at 5 pm&quot; to 3 receivers &quot;Kate&quot; 011, &quot;Max&quot; 012 and &quot;Anna&quot; 013. But You also want Anna to receive additional text &quot;Take Your friends with You, Anna&quot;. So in the text message box You need to write &quot;See You at 5 pm. $(&quot;Anna&quot; 013)[Take Your friends with You, Anna]&quot;. 
+\n\nAnna will receive message => See You at 5 pm. Take Your friends with You, Anna. 
+\n\nMax and Kate will just receive => See You at 5 pm.\nSo overall You just have to write $(phone numbers separated by comma as in contacts box)[text] if You want some particular people to receive additional text, which others will not get."
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+</ScrollView>

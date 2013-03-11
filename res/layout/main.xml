@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFE7E5"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/but"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:enabled="false" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/new_mes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/but"
+            android:background="#EFE7E5"
+            android:contentDescription="New"
+            android:src="@drawable/main_new_icon" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/folders"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/but"
+            android:background="#EFE7E5"
+            android:contentDescription="Folders"
+            android:src="@drawable/main_folders_icon" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/but2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:enabled="false" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/keywords"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/but2"
+            android:background="#EFE7E5"
+            android:contentDescription="Keywords"
+            android:src="@drawable/main_keywords_icon" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/but2"
+            android:background="#EFE7E5"
+            android:contentDescription="Help"
+            android:src="@drawable/main_help_icon" >
+        </ImageButton>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.33"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/but3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:enabled="false" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>
