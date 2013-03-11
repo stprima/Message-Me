@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.elman.messageme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light" >
+        <receiver
+            android:name="ca.elman.messageme.SmsSenderReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <activity
+            android:name="ca.elman.messageme.MessageMeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.NewMessageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android-dir/mms-sms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.FoldersActivity"
+            android:label="@string/folders" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.NewMessageHelpActivity"
+            android:label="@string/help" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.ContactsListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.ContactsAndGroupsTabActivity"
+            android:label="@string/all_contacts" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.SetDateAndTimeActivity"
+            android:label="@string/new_message" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.KeywordsActivity"
+            android:label="@string/keywords" >
+        </activity>
+        <activity
+            android:name="ca.elman.messageme.NewKeywordActivity"
+            android:label="@string/new_keyword" >
+        </activity>
+    </application>
+
+</manifest>
